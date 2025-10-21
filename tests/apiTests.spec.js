@@ -100,7 +100,7 @@ test.describe("API challenge", () => {
     expect(headers).toEqual(expect.objectContaining({ "x-challenger": token }));
   });
 
-  test("Создание POS /todos", { tag: '@API'}, async ({ request }) => {
+  test("Создание POST /todos", { tag: '@API'}, async ({ request }) => {
     const todoData = {
         title: "Новая задача",
         description: "Описание моей задачи",
